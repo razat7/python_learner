@@ -1,3 +1,5 @@
+#Git Cheat Sheet
+
 #1st. Step
 # git config --global user.name "razat"
 # git config --global user.email "razatkhadka729@gmail.com"
@@ -5,19 +7,14 @@
 # to view 
 # git config --list
 
-# to add files
-# git init 
+#To push files in repository
+# git init
 # git add .
-
-# to commit change 
-# git commit -m 'first code ready for git hub'
-
-#upload to existing repo
-# git remote add origin https://git
-
-# git branch -M main
+# git commit -m 'comments'
+# git branch -m main
 # git remote add origin https://github.com/razat7/python_learner.git
-# git push -u origin main
-# git branch -M main
-# git remote add origin https://github.com/razat7/python_learner.git
-# git push -u origin main
+# git push -u origin main 
+
+# #### example
+# main = tag name 
+# url = https://github.com/razat7/python_learner.git
