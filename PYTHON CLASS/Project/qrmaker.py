@@ -1,16 +1,16 @@
 import qrcode
-# img = qrcode.make('Rajat Khadka')
-# type(img)  # qrcode.image.pil.PilImage
-# img.save("ram.png")
+img = qrcode.make('https://192.168.10.209:8096')
+type(img)  # qrcode.image.pil.PilImage
+img.save("movieserver.png")
 
-##wifi link qr generator
+#wifi link qr generator
 # wifi_type = "WPA"
-# wifi_ssid ="StarLink!!"
-# wifi_password = "g%ah92p9#"
-# wifi = f"WIFI:T:{wifi_type};S:{wifi_ssid};P:{wifi_password};;"
-# img = qrcode.make('wifi')
+# wifi_ssid ="LADIES LINE"
+# wifi_password = "birdal@321"
+# ladies = f"WIFI:T:{wifi_type};S:{wifi_ssid};P:{wifi_password};;"
+# img = qrcode.make(ladies)
 # type(img)
-# img.save("wifi.png")
+# img.save("ladies.png")
 
 #qrcode to send email
 # email_address = 'razat.khadka729@gmail.com'
@@ -22,9 +22,9 @@ import qrcode
 # img.save("email.png")
 
 # #send sms to contact
-phone_number = "980808888"
-message = "Hello there !"
-sms = f"SMSTO:{phone_number}:{message}"
-img = qrcode.make(sms)
-type(img)
-img.save("sms.png")
+# phone_number = "980808888"
+# message = "Hello there !"
+# sms = f"SMSTO:{phone_number}:{message}"
+# img = qrcode.make(sms)
+# type(img)
+# img.save("sms.png")

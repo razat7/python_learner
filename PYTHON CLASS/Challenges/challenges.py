@@ -137,10 +137,10 @@
 # print("---------------BMI CALCULATOR---------------\n")
 # print("Result is based on the data provide by users\n".upper())
 
-# height = float(input("Enter Your Height (in inches) : "))
-# weight = int(input("Enter Your Weight  (in kgs) : "))
+# # height = float(input("Enter Your Height (in cm) : "))
+# actual_height = float(input("Enter Your Height (in inches) : "))
+# weight = float(input("Enter Your Weight  (in kgs) : "))
 # age = int(input("Enter Your Age : "))
-# actual_height = height/3.281 #converting feet.inches into meters
 # bmi = weight/ (actual_height * actual_height)
 # print(f"Your BMI : {round(bmi, 2)}\n")
 # if bmi >= 25 and bmi <=30 and age < 50:
@@ -289,9 +289,120 @@
 #     print("There's something wrong, Please try again in a while.")
 
 #Option 2 (Using Dictionary Data Type)
-month = {'1':'january', '2':'february', '3': 'march', '4': 'april', '5': 'may', '6': 'june', '7': 'july', '8': 'august', '9': 'october', '10': 'september', '11': 'november', '12': 'december'}
-user11 = str(input("Enter the number of months : "))
-if user11 in month:
-    print(f"The month is {(month[user11]).upper()}")
-else:
-    print("Please try again in few minutes")
+# month = {'1':'january', '2':'february', '3': 'march', '4': 'april', '5': 'may', '6': 'june', '7': 'july', '8': 'august', '9': 'october', '10': 'september', '11': 'november', '12': 'december'}
+# user11 = str(input("Enter the number of months : "))
+# if user11 in month:
+#     print(f"The month is {(month[user11]).upper()}")
+# else:
+#     print("Please try again in few minutes")
+
+#-------------Display your name 1000 times using loop in python.------------
+
+# username = input("Enter your name :")
+# for i in range (1, 101):
+#     print(f"{i}. {username}")
+
+#------------using while loop-----------------------------
+# number = int(input("Enter any number you want to multiply : "))
+# for i in range (100): #i is variable that holds the range of a number there in range from 1 to 100
+#     print(f"{number}*{i}={number * i}")
+
+# number = 0
+# while number < 10:
+#     print(f"number id {number}")
+#     number += 1
+# print ("count ends")
+        
+# password = "12345"
+# attempt = 0
+# max_attempt = 3
+
+# while attempt < max_attempt: #applying while condition 
+#     userpasss = input("Enter the password :") #asking user to input the password
+#     if userpasss == password: #comparing user input password with right password
+#         print("Right password")
+#         break #While true case ends here
+
+#     else:
+#         attempt += 1 
+#         if attempt == max_attempt:
+#             print("Maximum Limit Reached")
+#         else:
+#             print("Password Wrong")
+
+# num = int(input("Enter the number : "))
+
+# if num <= 0:
+#     print("Please enter positive number")
+# else:
+#     countdown = num
+#     while countdown >= 0:
+#         countdown -= 1
+#         print(countdown)
+
+
+# import random #imorting module
+# def passwordGenerator(length): #creating a function name passwordGenrator
+
+#     alphabet = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z"
+#     number = "1,2,3,4,5,6,7,8,9,0"
+#     characters = "!,@,#,$,%,^,&,*"
+
+#     pw_print = alphabet + number + characters
+
+#     combined_pw = pw_print.split(",") #Splitting commas from the joined password characteres
+
+#     userpassword = ''.join(random.choice(combined_pw) for i in range (length))  
+#     #The '' (empty string) before .join is used as the separator, meaning that the characters are joined without any additional characters between them.
+    
+#     return userpassword
+
+# length = int(input("Enter the length of a password : "))
+# if length <= 0:
+#     print("Password Length cannot be null or negative number")
+# userpassword = passwordGenerator(length)
+# print(userpassword)
+
+
+
+# print("=================")
+
+# new_pass = passwordGenerator(5) #callinfg the function to declare value 
+# print(new_pass)
+
+
+# Example usage:
+# def square_Number(number):
+#     number = number**2
+#     return(number)
+
+# number = square_Number(4)
+# print(number)
+
+# def roundNumber(n):
+#     number = round(n)
+#     return number
+
+# num1 = roundNumber(3.11)
+# print(num1)
+
+name = [
+    # name , department
+    ("santosh", "IT"),
+    ("manish", "IT"),
+    ("sujan", "MBA"),
+    ("hari", "HR"),
+    ("sari", "Micbiology"),
+    ("bishwa", "software developer"),
+    ("mina", "Micbiology"),
+    ("rita", "HR"),
+    ("sachin", "Micbiology"),
+    ("gita", "HR"),
+
+]
+
+### Find all from Micbiology department
+departname = input("Enter Department Name : ")
+nameList = [name for name in name if name[1] == departname]
+
+print(nameList)

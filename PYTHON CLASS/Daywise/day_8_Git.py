@@ -16,7 +16,8 @@
 # git push -u origin main 
 
 
-# to update 
+# to update the current working repository
+
 # git add
 # git commit -m 'messages/comments'
 # # git push -u origin main 
@@ -24,3 +25,5 @@
 # #### example
 # main = tag name 
 # url = https://github.com/razat7/python_learner.git
+
+git clone urllink

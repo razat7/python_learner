@@ -1,3 +1,6 @@
+##-----------------------------LOOPS-------------------------
+#Do, While Loops
+
 # number = 10  
 # for i in range(number):
 #     result = i * 9
@@ -40,3 +43,18 @@
 # else:
 #     print(f"Score is {score} : Fail")
 
+##Pin verifying using while loop
+
+# pin = '1234'
+# userpin = ''
+# attempt= 0
+# while attempt < 4:
+#     userpin = input("Enter Your Pin : ")
+#     if userpin == pin:
+#         print("The entered pin is correct")
+#         break
+#     else:
+#         attempt +=1
+#         print("*Pin is incorrect")
+# else:
+#     print("Too many attempts, You are blocked.")
